@@ -21,7 +21,6 @@ services:
       context: .
   integration:
     depends_on:
-      - db      
       - accountownerapp
     image: "accountownerapp:test-B${BUILD_NUMBER}"
     build:
